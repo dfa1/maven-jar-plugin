@@ -85,6 +85,7 @@ public class TestJarMojo
     /**
      * {@inheritDoc}
      */
+    @Override
     public void execute()
         throws MojoExecutionException
     {

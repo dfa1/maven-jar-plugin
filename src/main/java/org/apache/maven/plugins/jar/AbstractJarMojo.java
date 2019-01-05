@@ -102,7 +102,7 @@ public abstract class AbstractJarMojo
      * Using this property will fail your build cause it has been removed from the plugin configuration. See the
      * <a href="https://maven.apache.org/plugins/maven-jar-plugin/">Major Version Upgrade to version 3.0.0</a> for the
      * plugin.
-     * 
+     *
      * @deprecated For version 3.0.0 this parameter is only defined here to break the build if you use it!
      */
     @Parameter( property = "jar.useDefaultManifestFile", defaultValue = "false" )
@@ -236,6 +236,7 @@ public abstract class AbstractJarMojo
      * Generates the JAR.
      * @throws MojoExecutionException in case of an error.
      */
+    @Override
     public void execute()
         throws MojoExecutionException
     {
